@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="avatar">
+                <img src="../Images/me.jpg" alt="Mustafa Buhov - The Software Developer :)" class="profile-image">
+            </div>
+            <div class="about-content">
+                <h1>About Me</h1>
+                <div class="about-paragraph">
+                    <p>Hi, my name is Mustafa Buhov and I'm a student at SoftUni Academy. I'm currently studying C# Web
+                        Development.</p>
+                </div>
+                <hr>
+                <div class="about-paragraph">
+                    <p>As an ambitious learner, I am constantly seeking out new challenges to help me grow and improve my
+                        skills. In addition to my academic pursuits, I'm also a future student at 'Paisii Hilendarski
+                        University'. Through these courses, I have developed algorithmic thinking and problem-solving skills.
+                    </p>
+                </div>
+                <hr>
+                <div class="about-paragraph">
+                    <p>Being passionate about knowledge, I love creating useful projects. Always looking for new challenges!</p>
+                </div>
+                <hr>
+                <div class="about-paragraph">
+                    <p>I'm currently seeking opportunities to put my skills into practice and gain practical experience in the
+                        field.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>My Experience</h2>
+            <ul>
+                <li>An ambitioned student at SoftUni</li>
+                <li>Willing to always learn new stuff and work on different projects</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="animate-projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><a href="https://github.com/MustyX23/PingPong">PingPong in the .NET console</a></li>
+                <li><a href="https://github.com/MustyX23/SoftUni-Fundamentals">SoftUni-Fundamentals course</a></li>
+                <li><a href="https://github.com/MustyX23/SoftUni-Advanced">SoftUni-Advanced</a></li>
+            </ul>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Buhov's personal Portfolio</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
