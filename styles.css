@@ -80,6 +80,55 @@ main ul li {
     justify-content: center;
     margin-bottom: 10px;
 }
+/* Home Section */
+#home {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+#home .profile-image {
+    animation: morph 8s ease-in-out infinite;
+    border: #212121 solid 3px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#home .emoji {
+    font-size: 1.5rem;
+}
+
+#home p {
+    line-height: 1.5;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#skills li {
+    margin-right: 20px;
+}
+
+#skills img {
+    width: 50px;
+    height: 50px;
+}
 
 /* About Section */
 #about {
@@ -90,17 +139,6 @@ main ul li {
     align-items: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-}
-
-#about .profile-image {
-    animation: morph 8s ease-in-out infinite;
-    border: #212121 solid 3px;
-    float: left;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 7rem;
 }
 
 #about p {
