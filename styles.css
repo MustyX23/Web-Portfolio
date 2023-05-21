@@ -47,18 +47,17 @@ main {
 }
 
 main h1 {
-    /* Position it to the center */
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Position it a bit left */
     margin-bottom: 20px;
     font-size: 3rem;
     margin-bottom: 30px;
 }
 
 main h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -82,9 +81,24 @@ main ul li {
 }
 /* Home Section */
 #home {
-    background-color: white;
+    position: relative;
+    overflow: hidden;
     padding: 50px;
     text-align: center;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
 }
 #home .profile-image {
     animation: morph 8s ease-in-out infinite;
@@ -94,20 +108,63 @@ main ul li {
     border-radius: 50%;
     object-fit: cover;
 }
+.avatar{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#home .hand{
+    display: inline-block;
+    vertical-align: middle;
+    animation: waving-hand 8s infinite; 
+}
 
 #home h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
 #home .emoji {
     font-size: 1.5rem;
 }
 
 #home p {
+    font-family: 'Roboto';
+    color: white;
     line-height: 1.5;
+    font-size: 1.1rem;
 }
-
+#home .tech-stack{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    bottom: 0;
+    color: #767676;
+    display: flex;
+    font-size: 1.7rem;
+    left: 0;
+    position: absolute;
+}
+#home .tech-stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    list-style: none;
+}
+#home .tech-stack ul li {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    cursor: pointer;
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+    width: 3.5rem;
+}
+#home .tech-stack ul li img {
+    height: auto;
+    width: 4.4rem;
+}
 /* Skills Section */
 #skills {
     background-color: #f5f5f5;
@@ -147,7 +204,8 @@ main ul li {
     font-size: 25px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px)
+ {
     #about {
         flex-direction: row;
         justify-content: center;
@@ -319,5 +377,31 @@ border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
     100% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+@keyframes waving-hand{
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
