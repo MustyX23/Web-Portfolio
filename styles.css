@@ -144,6 +144,14 @@ main ul li {
     left: 0;
     position: absolute;
 }
+#home .tech-stack p {
+    border-right: 2px solid white;
+    color: white;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    margin-right: 7rem;
+    padding-right: 2rem;
+}
 #home .tech-stack ul {
     display: flex;
     flex-wrap: wrap;
