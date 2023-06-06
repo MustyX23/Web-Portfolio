@@ -38,73 +38,68 @@
                 <div class="hand">
                     <img src="../Images/wave.png" alt="Hello">
                 </div>
-                <!-- До тука стигнах -->
-                <!-- 1. Да се премести параграфа отляво на профилната -->
-                <!-- 2. Да се оправят размерите на логотата -->
                 <div class="content">
                     <p>Hi, I am Mustafa Buhov! <br>
-                        A passionate C# Web Developer based in Bulgaria, Velingrad. 🪐</p>
-                </div>             
-                    <div class="tech-stack">
-                        <p>Teck Stack</p>
-                        <div class="logos">
-                            <ul>
-                                <li><img src="../Images/csharp-logo.png" alt="C# logo" class="csharp-logo"></li>
-                                <li><img src="../Images/html-logo.png" alt="HTML logo"></li>
-                                <li><img src="../Images/css-logo.png" alt="CSS logo"></li>
-                                <li><img src="../Images/javascript-logo.png" alt="JavaScript logo"></li>
-                                <li><img src="../Images/mysql-logo.png" alt="MySQL logo"></li>
-                                <li><img src="../Images/MicrosoftOffice-logo.png" alt="MicrosoftOffice logo"></li>
-                            </ul>
-                        </div>
-
-                    </div>
+                        A passionate C# Web Developer, based in <br>Bulgaria, Velingrad. 🪐</p>
+                </div>                                 
             </div>
             
             <!-- Add your skills logos here -->
         </section>
-        <section id="about">           
+        <section id="about">
             <div class="about-content">
-                <h2>About Me</h2>
-                <div class="about-paragraph">
-                    <p>Hi, my name is Mustafa Buhov and I'm a student at SoftUni Academy. I'm currently studying C# Web
-                        Development.</p>
+                <div class="about-text">
+                    <h2 class="hover">About Me</h2>
+                    <div class="about-paragraph">
+                        <p>As a student at SoftUni Academy. I'm currently studying C# Web
+                            Development.</p>
+                    </div>
+                    <hr>
+                    <div class="about-paragraph">
+                        <p>Ambitious learner, who is constantly seeking out new challenges to grow and improve
+                            skills. In addition to my academic pursuits, I'm also a future student at 'Paisii Hilendarski
+                            University'. Through these courses, I have developed algorithmic thinking and problem-solving
+                            skills.</p>
+                    </div>
+                    <hr>
+                    <div class="about-paragraph">
+                        <p>Being passionate about knowledge, I love creating useful projects. Always looking for new challenges!
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="about-paragraph">
+                        <p>I'm currently seeking opportunities to put my skills into practice and gain practical experience in
+                            the field.</p>
+                    </div>
+                    <a href="https://github.com/MustyX23" target="_blank"><div class="git">
+                        <img src="Images/github-logo.png" alt="GitHub Logo" class="git-logo">
+                    </div></a>
                 </div>
-                <hr>
-                <div class="about-paragraph">
-                    <p>As an ambitious learner, I am constantly seeking out new challenges to help me grow and improve my
-                        skills. In addition to my academic pursuits, I'm also a future student at 'Paisii Hilendarski
-                        University'. Through these courses, I have developed algorithmic thinking and problem-solving skills.
-                    </p>
-                </div>
-                <hr>
-                <div class="about-paragraph">
-                    <p>Being passionate about knowledge, I love creating useful projects. Always looking for new challenges!</p>
-                </div>
-                <hr>
-                <div class="about-paragraph">
-                    <p>I'm currently seeking opportunities to put my skills into practice and gain practical experience in the
-                        field.</p>
+                <div class="about-image">
+                    <img src="../Images/aboutme.jpeg" alt="Mustafa Buhov">
                 </div>
             </div>
         </section>
 
-
-
         <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>C#</li>
-                <li>.NET</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-            </ul>
+            <h2 class="hover">Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="logos">
+                    <ul>
+                        <li><img src="../Images/csharp-logo.png" alt="C# logo" class="csharp-logo"></li>
+                        <li><img src="../Images/html-logo.png" alt="HTML logo"></li>
+                        <li><img src="../Images/css-logo.png" alt="CSS logo" class="css-logo"></li>
+                        <li><img src="../Images/javascript-logo.png" alt="JavaScript logo"></li>
+                        <li><img src="../Images/mysql-logo.png" alt="MySQL logo"></li>
+                        <li><img src="../Images/MicrosoftOffice-logo.png" alt="MicrosoftOffice logo"></li>
+                        <li><img src="../Images/photoshop-logo.png" alt="Photoshop logo"></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="experience">
-            <h2>My Experience</h2>
+            <h2 class="hover">My Experience</h2>
             <ul>
                 <li>An ambitioned student at SoftUni</li>
                 <li>Willing to always learn new stuff and work on different projects</li>
@@ -112,7 +107,7 @@
         </section>
 
         <section id="projects" class="animate-projects">
-            <h2>My Projects</h2>
+            <h2 class="hover">My Projects</h2>
             <ul>
                 <li><a href="https://github.com/MustyX23/PingPong">PingPong in the .NET console</a></li>
                 <li><a href="https://github.com/MustyX23/SoftUni-Fundamentals">SoftUni-Fundamentals course</a></li>
@@ -122,7 +117,7 @@
 
 
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2 class="hover">Contact Me</h2>
             <form action="submit-form.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
