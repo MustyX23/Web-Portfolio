@@ -131,81 +131,65 @@ main ul li {
     font-family: 'Roboto';
     color: white;
     line-height: 1.5;
-    font-size: 1.1rem;
-}
-#home .tech-stack{
-    display: flex;
-    justify-content: center;  
-    align-items: center;
-    bottom: 0;
-    color: #767676;
-    display: flex;
-    font-size: 1.7rem;
-    left: 0;
-    position: absolute;
-}
-#home .tech-stack p {
-    border-right: 2px solid white;
-    color: white;
-    font-family: Mulish, sans-serif;
-    font-weight: 600;
-    margin-right: 7rem;
-    padding-right: 2rem;
-}
-#home .tech-stack ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    list-style: none;
-}
-#home .tech-stack ul li {
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
-    cursor: pointer;
-    display: flex;
-    height: 3.5rem;
-    justify-content: center;
-    width: 3.5rem;
-}
-#home .tech-stack ul li img {
-    height: auto;
-    width: 4.4rem;
-}
-/* Skills Section */
-#skills {
-    background-color: #f5f5f5;
-    padding: 50px;
-    text-align: center;
-}
-
-#skills ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-#skills li {
-    margin-right: 20px;
-}
-
-#skills img {
-    width: 50px;
-    height: 50px;
+    font-size: 1.3rem;
+    margin-bottom: 6rem;
 }
 
 /* About Section */
 #about {
-    background-color: #f5f5f5;
+    background: url(Images/about-me\ background.jpg) no-repeat center center/cover;
     padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+.about-text {
+    width: 70%;
+}
+.about-paragraph {
+    margin-bottom: 20px;
+}
+.about-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid #ccc;
+    padding-left: 1rem;    
+}
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15%;
+}
+.git{
+    display: flex;
+    justify-content: center;    
+}
+.git-logo{    
+    width: 20%;
+    cursor: pointer;
+}
+.hover {
+    --c: linear-gradient(#fa0d0d 0 0);
+    /* update the color here */
+    padding-bottom: .15em;
+    background: var(--c), var(--c);
+    background-size: .3em .1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+}
 
+.hover:hover {
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
+}
 #about p {
     line-height: 1.5;
     margin-bottom: 20px;
@@ -233,22 +217,74 @@ main ul li {
 
 /* Skills Section */
 #skills {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f9f9f9;
+    background: url(../Images/skills-background.jpg) no-repeat center center/cover;
     padding: 50px;
-}
-
-#skills ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-#skills li {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#skills .hover {
+    --c: linear-gradient(#0d9aff 0 0);
+    padding-bottom: .15em;
+    background: var(--c), var(--c);
+    background-size: .3em .1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+}
+
+#skills .hover:hover {
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
+}
+
+#skills .tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#skills .tech-stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    list-style: none;
+    align-items: center;
+}
+
+#skills .tech-stack ul li {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    cursor: pointer;
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+    width: 3.5rem;
+}
+
+#skills .tech-stack ul li img {
+    height: auto;
+    width: 4.4rem;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+#skills .tech-stack ul li .csharp-logo {
+    width: 7rem;
+}
+
+#skills .tech-stack ul li .css-logo {
+    width: 4rem;
 }
 
 /* Experience Section */
