@@ -27,24 +27,23 @@
         <section id="home">
             <div class="video-background">
                 <video autoplay loop muted>
-                    <source src="../Images/home-background.mp4" type="video/mp4">                    
+                    <source src="Images/home-background.mp4" type="video/mp4">                    
                 </video>
             </div>
             <div class="home-content">
                 <h1>C# Web Developer</h1>
                 <div class="avatar">
-                    <img src="../Images/me.jpg" alt="Mustafa Buhov - The Software Developer :)" class="profile-image">
-                </div>
-                <div class="hand">
-                    <img src="../Images/wave.png" alt="Hello">
+                    <img src="Images/me.jpg" alt="Mustafa Buhov - The Software Developer :)" class="profile-image">
                 </div>
                 <div class="content">
                     <p>Hi, I am Mustafa Buhov! <br>
                         A passionate C# Web Developer, based in <br>Bulgaria, Velingrad. 🪐</p>
-                </div>                                 
+                    </div>                                 
+                    <div class="hand-container">
+                        <img class="hand" src="Images/wave.png" alt="Hello">
+                    </div>
             </div>
             
-            <!-- Add your skills logos here -->
         </section>
         <section id="about">
             <div class="about-content">
@@ -57,8 +56,8 @@
                     <hr>
                     <div class="about-paragraph">
                         <p>Ambitious learner, who is constantly seeking out new challenges to grow and improve
-                            skills. In addition to my academic pursuits, I'm also a future student at 'Paisii Hilendarski
-                            University'. Through these courses, I have developed algorithmic thinking and problem-solving
+                            skills. In addition to my academic pursuits, I'm also a student at 'Paisii Hilendarski
+                            University' with Software Engineering specialty. Through these courses, I have developed algorithmic thinking and problem-solving
                             skills.</p>
                     </div>
                     <hr>
@@ -76,7 +75,7 @@
                     </div></a>
                 </div>
                 <div class="about-image">
-                    <img src="../Images/aboutme.jpeg" alt="Mustafa Buhov">
+                    <img src="Images/aboutme.jpeg" alt="Mustafa Buhov">
                 </div>
             </div>
         </section>
@@ -86,36 +85,68 @@
             <div class="tech-stack">
                 <div class="logos">
                     <ul>
-                        <li><img src="../Images/csharp-logo.png" alt="C# logo" class="csharp-logo"></li>
-                        <li><img src="../Images/html-logo.png" alt="HTML logo"></li>
-                        <li><img src="../Images/css-logo.png" alt="CSS logo" class="css-logo"></li>
-                        <li><img src="../Images/javascript-logo.png" alt="JavaScript logo"></li>
-                        <li><img src="../Images/mysql-logo.png" alt="MySQL logo"></li>
-                        <li><img src="../Images/MicrosoftOffice-logo.png" alt="MicrosoftOffice logo"></li>
-                        <li><img src="../Images/photoshop-logo.png" alt="Photoshop logo"></li>
+                        <li><img src="Images/csharp-logo.png" alt="C# logo" class="csharp-logo"></li>
+                        <li><img src="Images/html-logo.png" alt="HTML logo"></li>
+                        <li><img src="Images/css-logo.png" alt="CSS logo" class="css-logo"></li>
+                        <li><img src="Images/javascript-logo.png" alt="JavaScript logo"></li>
+                        <li><img src="Images/mysql-logo.png" alt="MySQL logo"></li>
+                        <li><img src="Images/MicrosoftOffice-logo.png" alt="MicrosoftOffice logo"></li>
+                        <li><img src="Images/photoshop-logo.png" alt="Photoshop logo"></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="experience">
+            <div class="experience-background">
+                <video autoplay loop muted>
+                    <source src="Images/pixel-background.mp4" type="video/mp4">                    
+                </video>
+            </div>
             <h2 class="hover">My Experience</h2>
-            <ul>
-                <li>An ambitioned student at SoftUni</li>
-                <li>Willing to always learn new stuff and work on different projects</li>
-            </ul>
-        </section>
+            <div class="card-container-wrapper">
+                <a href="https://uni-plovdiv.bg/">
+                    <div class="card-container">
+                        <div class="card-content">
+                            <div class="experience-card">
+                                <h4>Degree</h4>
+                                <p>Currently pursuing a Bachelor's degree in Computer Science with a focus on Software Engineering.</p>
+                            </div>
+                            <img src="Images/pu.png" alt="">
+                            
+                        </div>
+                </a>
+                </div>
+                <a href="https://softuni.bg/">
+                    <div class="card-container">
+                        <div class="card-content">
+                            <div class="experience-card">
+                                <h4>Education</h4>
+                                <p>Completed coursework in software development methodologies and software testing.</p>
+                            </div>
+                            <img src="Images/softuni-logo.png" alt="">
+                            
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/MustyX23/Cafe-Management-System">
+                    <div class="card-container">
+                        <div class="card-content">
+                            <div class="experience-card">
+                                <h4>Self-Educate</h4>
+                                <p>Here is a good example of my knowledge creating apps.</p>
+                            </div>
+                            <img src="Images/caffe_app_Icon.ico" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                </a>                           
+        </section>                     
+    </main>
 
-        <section id="projects" class="animate-projects">
-            <h2 class="hover">My Projects</h2>
-            <ul>
-                <li><a href="https://github.com/MustyX23/PingPong">PingPong in the .NET console</a></li>
-                <li><a href="https://github.com/MustyX23/SoftUni-Fundamentals">SoftUni-Fundamentals course</a></li>
-                <li><a href="https://github.com/MustyX23/SoftUni-Advanced">SoftUni-Advanced</a></li>
-            </ul>
-        </section>
-
-
+    <footer>
         <section id="contact">
             <h2 class="hover">Contact Me</h2>
             <form action="submit-form.php" method="POST">
@@ -126,12 +157,9 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send</button>
+                <p>&copy; 2023 Buhov's personal Portfolio</p>
             </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Buhov's personal Portfolio</p>
+        </section>       
     </footer>
 
     <script src="scripts.js"></script>
